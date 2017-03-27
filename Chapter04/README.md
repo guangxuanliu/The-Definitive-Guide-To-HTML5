@@ -1,0 +1,1 @@
+Notice:In the chapter 4.2.2 user stylesheet,[chrome had removed user stylesheets since chrome 32](https://www.reddit.com/r/chrome/comments/1ymfgw/user_stylesheet_customcss_support_removed_in/)
