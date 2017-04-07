@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style>
+        body{
+            counter-reset: num;
+        }
+        p::before{
+            content: counter(num) ".";
+            counter-increment: num 1;
+        }
+    </style>
+</head>
+<body>
+<a href="http://www.google.com">Google</a>
+<p>My name is Liu Guangxuan.</p>
+<p>I like coding.</p>
+<a href="http://www.baidu.com">Baidu</a>
+</body>
+</html>
