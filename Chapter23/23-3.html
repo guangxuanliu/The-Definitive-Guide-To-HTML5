@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡</title>
+    <style>
+        #name{
+            font-size: larger;
+            border:medium solid black;
+            transition-delay: 10ms;
+            transition-duration: 1s;
+        }
+        #name:hover{
+            font-size:x-large;
+            border: medium solid white;
+            background-color: green;
+            color: white;
+            padding: 4px;
+            transition-delay: 100ms;
+            transition-duration: 500ms;
+            transition-property: background-color,color,padding,font-size,border;
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+<p>My name is <span id="name">Liu Guangxuan</span></p>
+</body>
+</html>
