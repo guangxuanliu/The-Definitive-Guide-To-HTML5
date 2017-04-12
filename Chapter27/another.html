@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨文档消息传递</title>
+</head>
+<body>
+<div id="message">
+    这里显示消息内容
+</div>
+<script>
+window.addEventListener("message",function (e) {
+    console.log(e);
+})
+</script>
+</body>
+</html>

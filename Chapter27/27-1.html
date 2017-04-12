@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取window对象</title>
+</head>
+<body>
+<div>
+    <button id="send">send</button>
+</div>
+<script>
+document.getElementById("send").onclick = function () {
+    window["nested"].postMessage("这是发送的消息内容！","http://localhost:8080");
+}
+</script>
+</body>
+</html>
