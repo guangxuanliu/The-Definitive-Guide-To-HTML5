@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html manifest="fruit.manifest">
+<head>
+    <meta charset="UTF-8">
+    <title>定义清单</title>
+</head>
+<body>
+
+<img id="imgtarget" src="banana.jpg" style="width: 300px;height: 300px;">
+<div>
+    <button id="banana">Banana</button>
+    <button id="apples">Apples</button>
+    <button id="cherries">Cherries</button>
+</div>
+<script>
+    var buttons = document.getElementsByTagName("button");
+    for(var i = 0;i < buttons.length;i++){
+        buttons[i].onclick = function (e) {
+            document.getElementById("imgtarget").src = e.target.id + ".jpg";
+        }
+    }
+</script>
+</body>
+</html>

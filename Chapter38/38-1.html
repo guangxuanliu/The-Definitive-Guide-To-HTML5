@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用地理定位</title>
+</head>
+<body>
+
+<div id="content">
+
+</div>
+
+<script>
+    navigator.geolocation.getCurrentPosition(display,handleError);
+    function display(pos) {
+        var content = "";
+        for (prop in pos.coords){
+            content += prop + ":" + pos.coords[prop] + "<br>";
+        }
+        document.getElementById("content").innerHTML = content;
+    }
+    function handleError(err) {
+        document.getElementById("content").innerHTML = err.code;
+        document.getElementById("content").innerHTML += err.message;
+    }
+</script>
+
+</body>
+</html>
